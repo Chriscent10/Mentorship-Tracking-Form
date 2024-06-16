@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/Chriscent/Documents/Trainingand%20mentorship.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training and Mentorship Tracking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 100vh;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 600px;
+            margin: auto;
+        }
+
+        .form-heading {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: left;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .form-subheading {
+            font-size: 18px;
+            text-align: left;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-family: 'Arial', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            border-color: #4CAF50;
+            box-shadow: inset 0 2px 5px rgba(0, 128, 0, 0.3);
+            outline: none;
+        }
+
+        .button-submit {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .button-clear {
+            background-color: #f44336;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .button-submit:hover, .button-clear:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-heading">Training and Mentorship Tracking Form</div>
+        <div class="form-subheading">Fill this form by week 4 of Mentorship</div>
+        
+        <form id="trainingForm">
+            <div class="form-group">
+                <label for="weekOfTraining">Week of Training:</label>
+                <select id="weekOfTraining"><option value="May Week 5">May Week 5</option><option value="May Week 6">May Week 6</option><option value="May Week 7">May Week 7</option><option value="May Week 8">May Week 8</option><option value="May Week 9">May Week 9</option><option value="June Week 1">June Week 1</option><option value="June Week 2">June Week 2</option><option value="June Week 3">June Week 3</option><option value="June Week 4">June Week 4</option><option value="June Week 5">June Week 5</option><option value="July Week 1">July Week 1</option><option value="July Week 2">July Week 2</option><option value="July Week 3">July Week 3</option><option value="July Week 4">July Week 4</option><option value="July Week 5">July Week 5</option><option value="August Week 1">August Week 1</option><option value="August Week 2">August Week 2</option><option value="August Week 3">August Week 3</option><option value="August Week 4">August Week 4</option><option value="August Week 5">August Week 5</option><option value="September Week 1">September Week 1</option><option value="September Week 2">September Week 2</option><option value="September Week 3">September Week 3</option><option value="September Week 4">September Week 4</option><option value="September Week 5">September Week 5</option><option value="October Week 1">October Week 1</option><option value="October Week 2">October Week 2</option><option value="October Week 3">October Week 3</option><option value="October Week 4">October Week 4</option><option value="October Week 5">October Week 5</option><option value="November Week 1">November Week 1</option><option value="November Week 2">November Week 2</option><option value="November Week 3">November Week 3</option><option value="November Week 4">November Week 4</option><option value="November Week 5">November Week 5</option><option value="December Week 1">December Week 1</option><option value="December Week 2">December Week 2</option><option value="December Week 3">December Week 3</option><option value="December Week 4">December Week 4</option><option value="December Week 5">December Week 5</option><option value="January Week 1">January Week 1</option><option value="January Week 2">January Week 2</option><option value="January Week 3">January Week 3</option><option value="January Week 4">January Week 4</option><option value="January Week 5">January Week 5</option><option value="February Week 1">February Week 1</option><option value="February Week 2">February Week 2</option><option value="February Week 3">February Week 3</option><option value="February Week 4">February Week 4</option><option value="February Week 5">February Week 5</option><option value="March Week 1">March Week 1</option><option value="March Week 2">March Week 2</option><option value="March Week 3">March Week 3</option><option value="March Week 4">March Week 4</option><option value="March Week 5">March Week 5</option><option value="April Week 1">April Week 1</option></select>
+            </div>
+
+            <div class="form-group">
+                <label for="nameOfCohort">Name of the Cohort:</label>
+                <input type="text" id="nameOfCohort">
+            </div>
+
+            <div class="form-group">
+                <label for="avenueOfTraining">Avenue of Training:</label>
+                <select id="avenueOfTraining"><option value="Institution">Institution</option><option value="Collaborator">Collaborator</option></select>
+            </div>
+
+            <div class="form-group">
+                <label for="typeOfTraining">Type of Training:</label>
+                <select id="typeOfTraining"><option value="Women Only">Women Only</option><option value="General">General</option></select>
+            </div>
+
+            <div class="form-group">
+                <label for="categoriesTrained">Categories Trained:</label>
+                <select id="categoriesTrained"><option value="Data Entry">Data Entry</option><option value="Digital marketing &amp; E-commerce">Digital marketing &amp; E-commerce</option><option value="Transcription">Transcription</option><option value="Virtual Assistance">Virtual Assistance</option><option value="Content Writing">Content Writing</option><option value="Computer Digital Literacy">Computer Digital Literacy</option><option value="Blue Collar">Blue Collar</option><option value="Basic Graphic Design">Basic Graphic Design</option><option value="Data Analysis using Excel">Data Analysis using Excel</option><option value="Introduction to Artificial Intelligence">Introduction to Artificial Intelligence</option><option value="Search Engine Optimization">Search Engine Optimization</option><option value="Basic Computer Programming">Basic Computer Programming</option><option value="Basic App Development">Basic App Development</option><option value="Entrepreneurship">Entrepreneurship</option><option value="Financial Markets &amp; Trading">Financial Markets &amp; Trading</option><option value="Introduction to Cybersecurity">Introduction to Cybersecurity</option></select>
+            </div>
+
+            <div class="form-group">
+                <label for="nameOfTrainer">Name of Trainer:</label>
+                <select id="nameOfTrainer"><option value="Rhoda Awino Ndege">Rhoda Awino Ndege</option><option value="Bonface Lumbasi Agesa">Bonface Lumbasi Agesa</option><option value="Collins Ojiwa">Collins Ojiwa</option><option value="Samson Emopusi">Samson Emopusi</option><option value="Mercy Chepkorir">Mercy Chepkorir</option><option value="Steve Njenga Maina">Steve Njenga Maina</option><option value="Kennedy Kipkoech">Kennedy Kipkoech</option><option value="Elijah Kibet Cheruiyot">Elijah Kibet Cheruiyot</option><option value="Evance Kipkorir Terer">Evance Kipkorir Terer</option><option value="Hillary Lihanda">Hillary Lihanda</option><option value="Samuel Ondima Agwora">Samuel Ondima Agwora</option><option value="Elias Rotich">Elias Rotich</option><option value="Caroline Chebet">Caroline Chebet</option><option value="Anastacia J Kugun">Anastacia J Kugun</option><option value="Athanas Kiplimo Kosey">Athanas Kiplimo Kosey</option><option value="Samuel Wekesa Simiyu">Samuel Wekesa Simiyu</option><option value="Echwa Mzungu Richard">Echwa Mzungu Richard</option><option value="Peter Kibet Rotumoi">Peter Kibet Rotumoi</option><option value="Stephen Maingi">Stephen Maingi</option><option value="Samuel Oluoch Owino">Samuel Oluoch Owino</option><option value="Denish Abok Bondo">Denish Abok Bondo</option><option value="Lameck Juniour Elijah">Lameck Juniour Elijah</option><option value="Rehema Achieng Olwande">Rehema Achieng Olwande</option><option value="Ouma Ogutu Nicholas">Ouma Ogutu Nicholas</option><option value="Donsy Otieno">Donsy Otieno</option><option value="Evance Odhiambo Okoth">Evance Odhiambo Okoth</option><option value="Magdalene Wangu Thuo">Magdalene Wangu Thuo</option><option value="Rhoda Annie Kiruja">Rhoda Annie Kiruja</option><option value="Cynthia Wairimu Murimi">Cynthia Wairimu Murimi</option><option value="Mary Muthoni">Mary Muthoni</option><option value="Benson Mutua">Benson Mutua</option><option value="Onesmus Muguna Mworia">Onesmus Muguna Mworia</option><option value="Zablon Mutwiri Muthuri">Zablon Mutwiri Muthuri</option><option value="Martha Mwende Matei">Martha Mwende Matei</option><option value="Nduva Mutinda">Nduva Mutinda</option><option value="Kelvin Murithi Mutwiri">Kelvin Murithi Mutwiri</option><option value="Daniel Kivuva">Daniel Kivuva</option><option value="Allan Munga Katana">Allan Munga Katana</option><option value="Mwishee Abdalla">Mwishee Abdalla</option><option value="Eustace Muchangi Njiru">Eustace Muchangi Njiru</option><option value="Salim Kalime Kasim">Salim Kalime Kasim</option><option value="James Wainaina">James Wainaina</option><option value="Mohamed Athman Dirivo">Mohamed Athman Dirivo</option><option value="Valentine Njeri Wanjiku">Valentine Njeri Wanjiku</option><option value="Dianah Wanjiku Njeri">Dianah Wanjiku Njeri</option><option value="Brian Rimi">Brian Rimi</option><option value="Fridah Wangui Kibe">Fridah Wangui Kibe</option><option value="Faith Wanja Mathenge">Faith Wanja Mathenge</option><option value="Rachael Wanjiru Gichuki">Rachael Wanjiru Gichuki</option><option value="Paul Wafula Wamocha">Paul Wafula Wamocha</option><option value="Johnson Murimi">Johnson Murimi</option><option value="Joyce Kimani">Joyce Kimani</option></select>
+            </div>
+
+            <div class="form-group">
+                <label for="region">Region:</label>
+                <select id="region"><option value="COAST">COAST</option><option value="EASTERN">EASTERN</option><option value="LOWER CENTRAL">LOWER CENTRAL</option><option value="UPPER CENTRAL">UPPER CENTRAL</option><option value="NAIROBI">NAIROBI</option><option value="SOUTH RIFT">SOUTH RIFT</option><option value="NORTH RIFT">NORTH RIFT</option><option value="WESTERN">WESTERN</option><option value="NYANZA">NYANZA</option></select>
+            </div>
+
+            <div class="form-group">
+                <label for="numberEnrolledToMentorship">Number Enrolled to Mentorship:</label>
+                <input type="text" id="numberEnrolledToMentorship" onkeypress="return isNumeric(event)">
+            </div>
+
+            <div class="form-group">
+                <label for="expectedCompletionDate">Expected Completion Date:</label>
+                <input type="date" id="expectedCompletionDate">
+            </div>
+
+            <div class="form-group">
+                <label for="linkToMentorshipEnrollment">Link to Mentorship Enrollment:</label>
+                <input type="text" id="linkToMentorshipEnrollment">
+            </div>
+
+            <div class="form-group">
+                <label for="completionStatus">Completion Status:</label>
+                <select id="completionStatus"><option value="Completed">Completed</option><option value="In Progress">In Progress</option><option value="Not Started">Not Started</option></select>
+            </div>
+
+            <div class="form-group">
+                <label for="male">Male:</label>
+                <input type="text" id="male" onkeypress="return isNumeric(event)">
+            </div>
+
+            <div class="form-group">
+                <label for="female">Female:</label>
+                <input type="text" id="female" onkeypress="return isNumeric(event)">
+            </div>
+
+            <div class="form-group">
+                <label for="totalMentored">Total Mentored:</label>
+                <input type="text" id="totalMentored" onkeypress="return isNumeric(event)">
+            </div>
+
+            <div class="form-group">
+                <label for="numberEarning">Number Earning:</label>
+                <input type="text" id="numberEarning" onkeypress="return isNumeric(event)">
+            </div>
+
+            <button type="button" class="button-submit" onclick="submitForm()">Submit</button>
+            <button type="button" class="button-clear" onclick="clearForm()">Clear All</button>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const weekOptions = [
+                "May Week 5", "May Week 6", "May Week 7", "May Week 8", "May Week 9",
+                "June Week 1", "June Week 2", "June Week 3", "June Week 4", "June Week 5",
+                "July Week 1", "July Week 2", "July Week 3", "July Week 4", "July Week 5",
+                "August Week 1", "August Week 2", "August Week 3", "August Week 4", "August Week 5",
+                "September Week 1", "September Week 2", "September Week 3", "September Week 4", "September Week 5",
+                "October Week 1", "October Week 2", "October Week 3", "October Week 4", "October Week 5",
+                "November Week 1", "November Week 2", "November Week 3", "November Week 4", "November Week 5",
+                "December Week 1", "December Week 2", "December Week 3", "December Week 4", "December Week 5",
+                "January Week 1", "January Week 2", "January Week 3", "January Week 4", "January Week 5",
+                "February Week 1", "February Week 2", "February Week 3", "February Week 4", "February Week 5",
+                "March Week 1", "March Week 2", "March Week 3", "March Week 4", "March Week 5",
+                "April Week 1"
+            ];
+            
+            const regionOptions = [
+                "COAST", "EASTERN", "LOWER CENTRAL", "UPPER CENTRAL", "NAIROBI",
+                "SOUTH RIFT", "NORTH RIFT", "WESTERN", "NYANZA"
+            ];
+            
+            const avenueOptions = ["Institution", "Collaborator"];
+            
+            const trainingTypes = ["Women Only", "General"];
+            
+            const categories = [
+                "Data Entry", "Digital marketing & E-commerce", "Transcription", "Virtual Assistance",
+                "Content Writing", "Computer Digital Literacy", "Blue Collar", "Basic Graphic Design",
+                "Data Analysis using Excel", "Introduction to Artificial Intelligence", "Search Engine Optimization",
+                "Basic Computer Programming", "Basic App Development", "Entrepreneurship", "Financial Markets & Trading",
+                "Introduction to Cybersecurity"
+            ];
+            
+            const trainers = [
+                "Rhoda Awino Ndege", "Bonface Lumbasi Agesa", "Collins Ojiwa", "Samson Emopusi", "Mercy Chepkorir",
+                "Steve Njenga Maina", "Kennedy Kipkoech", "Elijah Kibet Cheruiyot", "Evance Kipkorir Terer",
+                "Hillary Lihanda", "Samuel Ondima Agwora", "Elias Rotich", "Caroline Chebet", "Anastacia J Kugun",
+                "Athanas Kiplimo Kosey", "Samuel Wekesa Simiyu", "Echwa Mzungu Richard", "Peter Kibet Rotumoi",
+                "Stephen Maingi", "Samuel Oluoch Owino", "Denish Abok Bondo", "Lameck Juniour Elijah",
+                "Rehema Achieng Olwande", "Ouma Ogutu Nicholas", "Donsy Otieno", "Evance Odhiambo Okoth",
+                "Magdalene Wangu Thuo", "Rhoda Annie Kiruja", "Cynthia Wairimu Murimi", "Mary Muthoni",
+                "Benson Mutua", "Onesmus Muguna Mworia", "Zablon Mutwiri Muthuri", "Martha Mwende Matei",
+                "Nduva Mutinda", "Kelvin Murithi Mutwiri", "Daniel Kivuva", "Allan Munga Katana", "Mwishee Abdalla",
+                "Eustace Muchangi Njiru", "Salim Kalime Kasim", "James Wainaina", "Mohamed Athman Dirivo",
+                "Valentine Njeri Wanjiku", "Dianah Wanjiku Njeri", "Brian Rimi", "Fridah Wangui Kibe", "Faith Wanja Mathenge",
+                "Rachael Wanjiru Gichuki", "Paul Wafula Wamocha", "Johnson Murimi", "Joyce Kimani"
+            ];
+            
+            const completionStatuses = ["Completed", "In Progress", "Not Started"];
+            
+            populateSelect("weekOfTraining", weekOptions);
+            populateSelect("region", regionOptions);
+            populateSelect("avenueOfTraining", avenueOptions);
+            populateSelect("typeOfTraining", trainingTypes);
+            populateSelect("categoriesTrained", categories);
+            populateSelect("nameOfTrainer", trainers);
+            populateSelect("completionStatus", completionStatuses);
+        });
+
+        function populateSelect(elementId, options) {
+            const select = document.getElementById(elementId);
+            options.forEach(option => {
+                const opt = document.createElement("option");
+                opt.value = opt.textContent = option;
+                select.appendChild(opt);
+            });
+        }
+
+        function isNumeric(event) {
+            const char = String.fromCharCode(event.which);
+            if (!/^\d$/.test(char)) {
+                event.preventDefault();
+            }
+        }
+
+        function submitForm() {
+            const form = document.getElementById("trainingForm");
+
+            const weekOfTraining = form["weekOfTraining"].value;
+            const nameOfCohort = form["nameOfCohort"].value;
+            const avenueOfTraining = form["avenueOfTraining"].value;
+            const categoriesTrained = form["categoriesTrained"].value;
+            const nameOfTrainer = form["nameOfTrainer"].value;
+            const region = form["region"].value;
+            const numberEnrolledToMentorship = form["numberEnrolledToMentorship"].value;
+            const expectedCompletionDate = form["expectedCompletionDate"].value;
+            const linkToMentorshipEnrollment = form["linkToMentorshipEnrollment"].value;
+            const completionStatus = form["completionStatus"].value;
+            const male = form["male"].value;
+            const female = form["female"].value;
+            const totalMentored = form["totalMentored"].value;
+            const numberEarning = form["numberEarning"].value;
+
+            if (!weekOfTraining) {
+                alert("Please select the WEEK of the training.");
+                form["weekOfTraining"].focus();
+                return;
+            }
+
+            if (!nameOfCohort) {
+                alert("Please enter the NAME OF THE COHORT.");
+                form["nameOfCohort"].focus();
+                return;
+            }
+
+            if (!avenueOfTraining) {
+                alert("Please select the AVENUE OF TRAINING.");
+                form["avenueOfTraining"].focus();
+                return;
+            }
+
+            if (!categoriesTrained) {
+                alert("Please select the CATEGORIES TRAINED.");
+                form["categoriesTrained"].focus();
+                return;
+            }
+
+            if (!nameOfTrainer) {
+                alert("Please select the NAME OF TRAINER.");
+                form["nameOfTrainer"].focus();
+                return;
+            }
+
+            if (!region) {
+                alert("Please select the REGION.");
+                form["region"].focus();
+                return;
+            }
+
+            if (!numberEnrolledToMentorship) {
+                alert("Please enter the NUMBER ENROLLED TO MENTORSHIP.");
+                form["numberEnrolledToMentorship"].focus();
+                return;
+            }
+
+            if (!expectedCompletionDate) {
+                alert("Please enter the EXPECTED COMPLETION DATE.");
+                form["expectedCompletionDate"].focus();
+                return;
+            }
+
+            if (!linkToMentorshipEnrollment) {
+                alert("Please enter the LINK TO MENTORSHIP ENROLLMENT.");
+                form["linkToMentorshipEnrollment"].focus();
+                return;
+            }
+
+            if (!completionStatus) {
+                alert("Please select the COMPLETION STATUS.");
+                form["completionStatus"].focus();
+                return;
+            }
+
+            if (!male) {
+                alert("Please enter the NUMBER OF MALES.");
+                form["male"].focus();
+                return;
+            }
+
+            if (!female) {
+                alert("Please enter the NUMBER OF FEMALES.");
+                form["female"].focus();
+                return;
+            }
+
+            if (!totalMentored) {
+                alert("Please enter the TOTAL MENTORED.");
+                form["totalMentored"].focus();
+                return;
+            }
+
+            if (!numberEarning) {
+                alert("Please enter the NUMBER EARNING.");
+                form["numberEarning"].focus();
+                return;
+            }
+
+            const response = confirm("Are you sure you want to submit the form?");
+            if (response) {
+                alert("Data submitted successfully.");
+                // Add code to save data or other actions
+            } else {
+                alert("Submission canceled.");
+            }
+        }
+
+        function clearForm() {
+            const form = document.getElementById("trainingForm");
+            form.reset();
+
+            form["weekOfTraining"].value = "";
+            form["nameOfCohort"].value = "";
+            form["avenueOfTraining"].value = "";
+            form["typeOfTraining"].value = "";
+            form["categoriesTrained"].value = "";
+            form["nameOfTrainer"].value = "";
+            form["region"].value = "";
+            form["numberEnrolledToMentorship"].value = "";
+            form["expectedCompletionDate"].value = "";
+            form["linkToMentorshipEnrollment"].value = "";
+            form["completionStatus"].value = "";
+            form["male"].value = "";
+            form["female"].value = "";
+            form["totalMentored"].value = "";
+            form["numberEarning"].value = "";
+        }
+    </script>
+
+
+</body></html>
